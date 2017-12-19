@@ -170,6 +170,9 @@ main {
 	text-transform: uppercase;
 	font-weight: bold;
 }
+.offer-wrapper img {
+	width: 100%;
+}
 .offer-wrapper-small {
 	width: 80%;
 	display: inline-block;

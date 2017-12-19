@@ -1,0 +1,386 @@
+/*
+-- General
+-- Header
+-- Main / Categories
+-- Main / Special offer
+-- Footer
+-- Media Queries
+---- min-width 480px
+---- min-width 576px
+---- min-width 768px
+---- min-width 992px
+---- min-width 1200px
+*/
+
+/* -- General -- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+}
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+ul, ol {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.clear {
+	/*clear: both;*/
+}
+h3 {
+	margin: 20px 0px;
+	font-size: 18px;
+	text-align: left;
+}
+
+/* -- Mobile first -- */
+/* -- Header -- */
+
+#logo {
+	text-align: left;
+}
+#logo img {
+	width: 250px;
+}
+#header-banner {
+	height: 200px;
+	width: 100%;
+	background: url(../img/baner.jpg) no-repeat center;
+	background-size: cover;
+}
+nav ul {
+	margin: 20px auto;
+}
+nav ul li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+}
+.nav-circle {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 0px auto 10px;
+}
+.nav-circle i {
+	font-size: 20px;
+	color: #fff;
+	padding-top: 11px;
+}
+nav ul li:nth-child(1) .nav-circle {
+	background-color: #00ff01;
+}
+nav ul li:nth-child(2) .nav-circle {
+	background-color: #008fff;
+}
+nav ul li:nth-child(3) .nav-circle {
+	background-color: #ffcc00;
+}
+nav ul li:nth-child(4) .nav-circle {
+	background-color: #ff00ff;
+}
+
+/* -- Main / Categories-- */
+
+main {
+	width: 98%;
+	margin: 0px auto;
+}
+.main-content-wrapper-900 {
+	margin: 50px auto;
+	max-width: 900px;
+}
+.main-content-wrapper-1200 {
+	margin: 50px auto;
+	max-width: 1200px;
+}
+.categories {
+	margin-bottom: 5px;
+}
+.categories article {
+	display: inline-block;
+	position: relative;
+}
+.categories article img {
+	width: 100%;
+	border: 1px solid #afafaf;
+}
+.categories article:hover {
+	box-shadow: 1px 1px 10px rgba(175, 175, 175, 0.8);
+}
+/* index.html 5 categories 1. line*/
+.categories-one article {
+	width: 49%;
+	max-width: 450px;
+	margin-bottom: 5px;
+}
+.categories-one a:nth-child(1) article,
+.categories-two a:nth-child(1) article {
+	float: left;
+}
+.categories-one a:nth-child(2) article,
+.categories-two a:nth-child(3) article {
+	float: right;
+}
+/* index.html 5 categories 2. line*/
+.categories-two article {
+	width: 32%;
+	max-width: 300px;
+}
+.categories-one article p,
+.categories-two article p {
+	position: absolute;
+	bottom: 3px;
+	left: 0;
+	width: 100%;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	background-color: rgba(0,0,0,0.6);
+	padding: 6px 0px;
+}
+/* all.html categories */
+.categories-three article {
+	width: 70%;
+	margin-bottom: 20px;
+	position: relative;
+}
+.categories-three article img {
+	width: 40%;
+	float: left;
+}
+.categories-three article p {
+	position: absolute;
+	bottom: 40%;
+	left: 55%;
+	text-align: left;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.offer-wrapper-small {
+	width: 80%;
+	display: inline-block;
+	margin: 2px auto 15px;
+	vertical-align: top;
+	text-align: left;
+	position: relative;
+}
+.offer-wrapper-small img {
+	width: 40%;
+	vertical-align: top;
+	border: 1px solid #2e2e2e;
+	margin: 0 5px 2px;
+}
+figcaption {
+	position: absolute;
+	bottom: 40%;
+	left: 55%;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+/* -- Main / Special offer-- */
+
+/*.special-offer {
+	margin: 20px auto;
+}
+.owl-nav {
+	font-size: 30px;
+}
+.owl-prev, .owl-next {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 15px 5px 0px;
+	padding-top: 4px;
+}
+.owl-prev:hover, .owl-next:hover {
+	background-color: rgba(0,0,0,0.2);
+	border-radius: 50%;
+}
+.item {
+	padding: 50px 0px 25px 25px;
+	background-position: center;
+}
+.item span {
+	display: block;
+	text-align: left;
+}
+.item .item-price-new {
+	font-size: 15px;
+	color: red;
+}
+.item .item-price-old {
+	font-size: 12px;
+	text-decoration: line-through;
+}
+.item-one {
+	background-image: url("../assets/images/oprema.jpg");
+}
+.item-two {
+	background-image: url("../assets/images/oprema.jpg");
+}
+.item-three {
+	background-image: url("../assets/images/oprema.jpg");
+}
+.item-four {
+	background-image: url("../assets/images/oprema.jpg");
+}
+.item-five {
+	background-image: url("../assets/images/oprema.jpg");
+}
+.item-six {
+	background-image: url("../assets/images/oprema.jpg");
+}*/
+
+
+/* -- Footer -- */
+
+footer {
+	background-color: #afafaf;
+}
+footer h4 {
+	margin-bottom: 15px;
+}
+address {
+	line-height: 25px;
+}
+#address {
+	padding-top: 30px;
+	background-color: #e2e2e2;
+}
+.address-image-wrap {
+	margin: 25px auto;
+}
+.copyright-wrapper {
+	width: 80%;
+	margin: 0px auto; 
+}
+#copyright {
+	border-top: 1px solid #2e2e2e;
+	padding: 25px 0;
+}
+footer h4 {
+	font-size: 24px;
+}
+address {
+	font-size: 18px;
+}
+
+/* -- Media Queries -- */
+/* -- min-width 480px -- */
+
+@media screen and (min-width: 480px){
+	#logo img {
+		width: 300px;
+	}
+	nav ul li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.nav-circle {
+		width: 50px;
+		height: 50px;
+		margin: 0px auto 10px;
+	}
+	.nav-circle i {
+		padding-top: 15px;
+	}
+}
+
+/* -- min-width 576px -- */
+
+@media screen and (min-width: 576px){
+	#header-banner {
+		height: 250px;
+	}
+}
+
+/* -- min-width 768px -- */
+
+@media screen and (min-width: 768px){
+	#header-banner {
+		height: 280px;
+		background-position: top;
+	}
+	.categories-one article p,
+	.categories-two article p {
+		padding: 10px 0px;
+		font-size: 18px;
+	}
+	.offer-wrapper-small {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.offer-wrapper img {
+		width: 48%;
+		vertical-align: top;
+	}
+	.categories-three article p {
+		font-size: 20px;
+	}
+	.address-text-wrap,
+	.address-image-wrap {
+		display: inline-block;
+		width: 45%;
+		vertical-align: top;
+	}
+	.address-text-wrap {
+		padding-top: 55px;
+	}
+	.address-image-wrap {
+		margin-top: 0;
+	}
+}
+
+/* -- min-width 992px -- */
+
+@media screen and (min-width: 992px){
+	#header-banner {
+		height: 300px;
+	}
+	.categories-three {
+		width: 85%;
+		margin: 0 auto;
+		text-align: left;
+	}
+	.categories-three article,
+	.offer-wrapper-small {
+		width: 45%;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+
+}
+
+/* -- min-width 1200px -- */
+
+@media screen and (min-width: 1200px){
+
+}
+
+/*#49e323 - green
+#00ff01
+
+#2695c0 - blue
+#008fff
+
+#ffe95f - yellow
+#ffcc00
+
+#da2dd5 - pink
+#ff00ff
